@@ -70,7 +70,7 @@ export default function VerifyOtpScreen() {
       
       if (res) {
         authContext.logIn(res.accessToken, res.refreshToken);
-        router.replace('/');
+        router.replace('/'); // Navigate to home screen
       } else {
         throw new Error('Invalid authentication response');
       }
